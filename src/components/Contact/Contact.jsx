@@ -174,7 +174,7 @@ function Contact() {
                         </div> */}
                         <div className="col-12 col-md-12">
                             <div className="d-flex align-items-center justify-content-between mb-4">
-                                <h5 className="blue-1 m-0">Book Now List</h5>
+                                <h5 className="blue-1 m-0">Contacts List</h5>
                                 <div className="d-flex gap-3 align-items-center">
                                     {/* <CustomButton isLink iconName="fa-solid fa-download" btnName="CATEGORY CSV" path="/Product/Bulk-Category-Upload" small roundedPill downloadAble /> */}
                                     <SearchBox setQuery={(e) => { handleFilterByQuery(e, ["name"]); }} query={query} extraClass="bg-white" />

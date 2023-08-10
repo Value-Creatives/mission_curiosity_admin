@@ -6,174 +6,17 @@ import { useState } from "react";
 function SideBar() {
   let location = useLocation();
   const [sidebar_item, setsidebar_item] = useState([
-    {
-      isrotated: true,
-      active: true,
-      name: "dashboard",
-      path: "/",
-      icon: "ion-grid",
-      children: [],
-    },
-    // {
-    //   isrotated: false,
-    //   active: false,
-    //   name: "Banners",
-    //   path: "/Dashboard",
-    //   icon: "fa-brands fa-product-hunt",
-    //   children: [
-    //     {
-    //       name: "Banners",
-    //       path: "/Banners",
-    //       active: false,
-    //     },
-    //   ],
-    // },
-    // {
-    //   isrotated: false,
-    //   active: false,
-    //   name: "Price",
-    //   path: "/Dashboard",
-    //   icon: "fa-brands fa-product-hunt",
-    //   children: [
-    //     {
-    //       name: "Add New Price",
-    //       path: "/Product/AddProduct",
-    //       active: false,
-    //     },
-    //     {
-    //       name: "Price List",
-    //       path: "/Product/Product-List",
-    //       active: false,
-    //     },
-    //   ],
-    // },
-    // {
-    //   isrotated: false,
-    //   active: false,
-    //   name: "itenary",
-    //   path: "/Dashboard",
-    //   icon: "fa-brands fa-product-hunt",
-    //   children: [
-    //     {
-    //       name: "Add New Itenary",
-    //       path: "/Itenary/AddItenary",
-    //       active: false,
-    //     },
-    //     {
-    //       name: "Itenary List",
-    //       path: "/Itenary/Itenary-List",
-    //       active: false,
-    //     },
-    //   ],
-    // },
-    // {
-    //   isrotated: false,
-    //   active: false,
-    //   name: "policy",
-    //   path: "/Dashboard", 
-    //   icon: "fa-brands fa-product-hunt",
-    //   children: [
-    //     {
-    //       name: "Privacy And Policy",
-    //       path: "/privacy-policy",
-    //       active: false,
-    //     }
-    //   ],
-    // },
-    // {
-    //   isrotated: false,
-    //   active: false,
-    //   name: "About Us",
-    //   path: "/Dashboard", 
-    //   icon: "fa-brands fa-product-hunt",
-    //   children: [
-    //     {
-    //       name: "About Us",
-    //       path: "/About-us",
-    //       active: false,
-    //     }
-    //   ],
-    // },
-    // {
-    //   isrotated: false,
-    //   active: false,
-    //   name: "Speakers ",
-    //   path: "/Dashboard", 
-    //   icon: "fa-brands fa-product-hunt",
-    //   children: [
-    //     {
-    //       name: "Speaker",
-    //       path: "/Speaker",
-    //       active: false,
-    //     }
-    //   ],
-    // },
-    // {
-    //   isrotated: false,
-    //   active: false,
-    //   name: "Venue",
-    //   path: "/Dashboard", 
-    //   icon: "fa-brands fa-product-hunt",
-    //   children: [
-    //     {
-    //       name: "Venue",
-    //       path: "/Venue",
-    //       active: false,
-    //     }
-    //   ],
-    // }, 
-    // {
-    //   isrotated: false,
-    //   active: false,
-    //   name: "Clients",
-    //   path: "/Dashboard", 
-    //   icon: "fa-brands fa-product-hunt",
-    //   children: [
-    //     {
-    //       name: "Clients",
-    //       path: "/Clients",
-    //       active: false,
-    //     }
-    //   ],
-    // }, 
-    // {
-    //   isrotated: false,
-    //   active: false,
-    //   name: "Faq",
-    //   path: "/Dashboard", 
-    //   icon: "fa-brands fa-product-hunt",
-    //   children: [
-    //     {
-    //       name: "Faq",
-    //       path: "/Faq",
-    //       active: false,
-    //     }
-    //   ],   
-    // },
-    // {
-    //   isrotated: false,
-    //   active: false,
-    //   name: "Testimonial",
-    //   path: "/Dashboard", 
-    //   icon: "fa-brands fa-product-hunt",
-    //   children: [
-    //     {
-    //       name: "Testimonial",
-    //       path: "/Testimonial",
-    //       active: false,
-    //     }
-    //   ],
-    // },
+
     {
       isrotated: false,
       active: false,
-      name: "Book now",
-      path: "/Dashboard",
+      name: "Bookings",
+      path: "/",
       icon: "fa-brands fa-product-hunt",
       children: [
         {
-          name: "Book now",
-          path: "/Booknow",
+          name: "View Bookings",
+          path: "/",
           active: false,
         }
       ],
@@ -186,111 +29,12 @@ function SideBar() {
       icon: "fa-brands fa-product-hunt",
       children: [
         {
-          name: "Contacts",
+          name: "View Contacts",
           path: "/Contact",
           active: false,
         }
       ],
     },
-    // {
-    //   isrotated: false,
-    //   active: false,
-    //   name: "Request a Call",
-    //   path: "/Dashboard", 
-    //   icon: "fa-brands fa-product-hunt",
-    //   children: [
-    //     {
-    //       name: "Request a Call",
-    //       path: "/Request-Call",
-    //       active: false,
-    //     }
-    //   ],
-    // },
-    // {
-    //   isrotated: false,
-    //   active: false,
-    //   name: "Discount Coupons",
-    //   path: "/Discounts/View",
-    //   icon: "ion-card",
-    //   children: [],
-    // },
-    // {
-    //   isrotated: false,
-    //   active: false,
-    //   name: "Customer",
-    //   path: "/Dashboard",
-    //   icon: "fa-solid fa-users",
-    //   children: [
-    //     {
-    //       name: "View Customer Categories",
-    //       path: "/Customer-Category",
-    //       active: false,
-    //     },
-    //     {
-    //       name: "All Customer",
-    //       path: "/Customer-list",
-    //       active: false,
-    //     },
-    //   ],
-    // },
-    // {
-    //   isrotated: false,
-    //   active: false,
-    //   name: "Customer Orders",
-    //   path: "/User-Order/View-All",
-    //   icon: "fa-solid fa-users",
-    //   children: [],
-    // },
-    // {
-    //   isrotated: false,
-    //   active: false,
-    //   name: "Chats",
-    //   path: "/Chats/AllChats",
-    //   icon: "fa-sharp fa-solid fa-comment",
-    //   children: [],
-    // },
-    // {
-    //   isrotated: false,
-    //   active: false,
-    //   name: "Email Config",
-    //   path: "/EmailConfig",
-    //   icon: "fa-sharp fa-solid fa-comment",
-    //   children: [],
-    // },
-    // {
-    //   isrotated: false,
-    //   active: false,
-    //   name: "Report",
-    //   path: "/Report",
-    //   icon: "fa-solid fa-users",
-    //   children: [
-    //     {
-    //       name: "View Product Sale",
-    //       path: "/Report/Product-Sale",
-    //       active: false,
-    //     },
-    //     {
-    //       name: "View Coupon Sale",
-    //       path: "/Report/Coupon-Sale",
-    //       active: false,
-    //     },
-    //     {
-    //       name: "View New Customers",
-    //       path: "/Report/New-Customers",
-    //       active: false,
-    //     },
-    //     {
-    //       name: "View Customers by category",
-    //       path: "/Report/Customers-Orders",
-    //       active: false,
-    //     },
-    //     {
-    //       name: "View Prouduct Searches",
-    //       path: "/Report/Prouduct-Searches",
-    //       active: false,
-    //     },
-    //   ],
-    // },
   ]);
 
   const isRotating = (i) => {

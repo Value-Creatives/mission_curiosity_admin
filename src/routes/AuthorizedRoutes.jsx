@@ -135,7 +135,7 @@ export default function AuthorizedRoutes() {
         <div className="col-12 col-md-10" style={{ height: "100vh", overflow: "hidden scroll" }}>
           <Header />
           <Routes>
-            <Route exact path="/" element={<Dashboard />}></Route>
+            {/* <Route exact path="/" element={<Dashboard />}></Route> */}
             <Route exact path="/Discounts/View" element={<ViewDiscounts />}></Route>
             {/* <Route exact path="/Chats/AllChats" element={<AllChats />}></Route> */}
             {/* <Route exact path="/Chats/Single-Chat/:id" element={<SingleChat />}></Route> */}
@@ -171,7 +171,7 @@ export default function AuthorizedRoutes() {
             <Route exact path="/Testimonial" element={<ViewTestimonial />}></Route>
             <Route exact path="/Testimonial/Create" element={<AddTestimonial />}></Route>
 
-            <Route exact path="/Booknow" element={<Booknow />}></Route>
+            <Route exact path="/" element={<Booknow />}></Route>
             <Route exact path="/Booknow/ViewBooknow" element={<ViewBookNow />}></Route>
 
             <Route exact path="/Contact" element={<Contact />}></Route>
